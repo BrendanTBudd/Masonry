@@ -137,10 +137,10 @@ img {
 }
 /*------------------------------ HEADER ------------------------------*/
 #header {
-	background-color: #241b18;
-	height: 88px;
+	background-color: lightgray;
+	height: 184px;
 	border-bottom: 1px solid #fff;
-	padding: 36px 0 0;
+	padding: 0px 0 0;
 }
 #header > div {
 	width: 940px;
@@ -151,6 +151,12 @@ img {
 /** Logo **/
 #logo {
 	float: left;
+	/*border: solid;*/
+	padding: -190px 100px 500px 10px;
+	/*margin: 0px;*/
+
+
+
 }
 /** Navigation **/
 #navigation {
@@ -169,7 +175,7 @@ img {
 	margin-left: 0;
 }
 #navigation li a {
-	color: #fff;
+	color: #940e1b;
 	font-family: "Oswald";
 	font-size: 14px;
 	padding: 15px 0;
@@ -177,7 +183,7 @@ img {
 	text-transform: uppercase;
 }
 #navigation li a:hover, #navigation li.selected a {
-	color: #ffc947;
+	color: #940e1b;
 }
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
