@@ -14,7 +14,7 @@
 	font-style: normal;
 }
 body {
-	background: #211917 url(../images/bg-body.png) repeat-y center top;
+	background: #211917 url(../images/stoneWall.jpg) repeat-y center top;
 	font-family: "QuattrocentoSans-Regular";
 	margin: 0;
 }
@@ -137,7 +137,7 @@ img {
 }
 /*------------------------------ HEADER ------------------------------*/
 #header {
-	background-color: lightgray;
+	background-color: transparentS;
 	height: 184px;
 	border-bottom: 1px solid #fff;
 	padding: 0px 0 0;
@@ -161,7 +161,7 @@ img {
 /** Navigation **/
 #navigation {
 	display: inline-block;
-	line-height: 80px;
+	line-height: 180px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -177,7 +177,7 @@ img {
 #navigation li a {
 	color: #940e1b;
 	font-family: "Oswald";
-	font-size: 14px;
+	font-size: 24px;
 	padding: 15px 0;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -227,8 +227,8 @@ img {
 }
 /** Adbox **/
 #adbox {
-	height: 407px;
-	width: 938px;
+	/*height: 407px;*/
+	/*width: 938px;*/
 	border-color: #fff;
 	border-width: 1px;
 	border-style: none solid solid;
@@ -250,9 +250,9 @@ img {
 }
 #adbox div.details {
 	background: url(../images/bg-pattern.jpg) no-repeat left top;
-	height: 407px;
+	height: 365px;
 	width: 380px;
-	padding: 61px 45px;
+	/*padding: 61px 45px;*/
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -269,10 +269,11 @@ img {
 #adbox div.details p {
 	color: #241b18;
 	font-size: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
 }
 /** Featured **/
+
 #featured {
 	display: inline-block;
 	list-style: none;
@@ -907,4 +908,10 @@ div.blog a.more:hover {
 
 #featured div {
 	height:120px;
+}
+
+/*Bootstrap Overrides*/
+.container{
+	padding-right: 0px;
+	padding-left: 0px;
 }

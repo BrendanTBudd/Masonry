@@ -1,17 +1,23 @@
 doctype html
 html
     head
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
+
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
         title Classic Masonry
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
-        div(id="header")
-            div
+        div(id="header" style="width: 940px; margin: auto" )
+            div(style="padding:0px")
                 div(id="logo")
                     a(href="index.html")
-                        img(src="images/logo.png" alt="LOGO")
+                        img(src="images/CMLogo2.gif" alt="LOGO" height= 180 width=330 style="background-color:transparent" )
                 ul(id="navigation")
                     li(class="selected")
-                        a(href="index.html") Home
+                        a(href="/") Home
                     li
                         a(href="about.html") About
                     li
@@ -24,37 +30,70 @@ html
             div(style="")
                 div(class="body")
                     div(id="adbox")
-                        img(src="images/chair.jpg")
-                        span(class="info") Whicker Chair <em>$250.00</em>
-                            a(href="index.html" class="btn1") View Details
+                        <div class="container" style="width: 550px; height:365px; margin: 0">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+
+                        <div class="carousel-inner">
+                        <div class="item active">
+                        <img src="/images/Masonry1.jpg" alt="Img" height=200px width=500px>
+                        </div>
+
+                        <div class="item">
+                        <img src="/images/Masonry.jpg" alt="Img" height=700 width=500>
+                        </div>
+
+                        <div class="item">
+                        <img src="/images/MasonryFire.jpg" alt="Img" height= 500 width=500 >
+                        </div>
+                        </div>
+
+
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                        </div>
+                        </div>
+                        //img(src="images/Masonry1.jpg" height= 500 width=475)
+                        //span(class="info")
+                        //    a(href="index.html" class="btn1") View Photos
                         div(class="details")
                             h1 High Quality
                             br
-                            h1 Wooden Furniture
+                            h1 Masonry Work
                             br
                             h1 Thats built to last
-                            p khgjhgjhfgmfhgfmhgkjh dbdfdgfdgdfgfdgd fdgdfgfdgdfgfdgdgf cdhghhgfhgfhgf hgfhgfhghgh dfhfdgdgdfgfd gfdgfdgfgfd ghghghgfgf hgfhgfhgh
+                            p Below will be all the sections for different photos to be entered
                     ul(id="featured")
                         li
                             div
-                                img(src="/images/living-room.jpg" alt="Img")
+                                img(src="/images/Masonry1.jpg" alt="Img" height= 173 width=310)
                                 a(href="index.html")
                             div(class="details")
-                                h4 Living Room
-                                p jdsfjsdkjdfsjhdssjhdfsjhdfs jhfdshjdfshjds dfgffdg hjdfsjdfsjfshj dfsjfshjdfsjdfsjkdfsjj hkjhkjhkjhk jhkjhkjhkjhkjhkjhkhkjhkj kjhkhkhkj kjhkhjkjhkhkjhj jhkhkj
+                                h4 Pools
+                                p This is a test section for pool photos
                         li(class="bedroom")
                             div
-                                img(src="images/bedroom.jpg")
+                                img(src="images/Masonry.jpg" height= 173 width=310)
                                 a(href="index.html")
                             div(class="details")
-                                h4 Bedroom
-                                p adfsdfsddsf sdfdsfdsfdfsf sdfdsfsdfds sdsdfds dfgfdgdfdfg dfgdfgdfgd dfgdfgdffdg cvbvcbcvbcvbcb cvbcvbvcbcvbcvb cvbvcbcvbcvbvcc
+                                h4 Grills
+                                p This is a test section for the would be Grills category
                         li(class="kitchen")
                             div
-                                img(src="images/kitchen.jpg" alt="Img")
+                                img(src="images/MasonryFire.jpg" alt="Img" height= 173 width=310)
                                 a(href="index.html")
-
-
-
-
-
+                            div(class="details")
+                                h4 Misc
+                                p This is a test section for the would be misc masonry work
