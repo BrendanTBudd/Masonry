@@ -139,7 +139,7 @@ img {
 #header {
 	background-color: transparentS;
 	height: 184px;
-	border-bottom: 1px solid #fff;
+	/*border-bottom: 1px solid #fff;*/
 	padding: 0px 0 0;
 }
 #header > div {
@@ -231,7 +231,7 @@ img {
 	/*width: 938px;*/
 	border-color: #fff;
 	border-width: 1px;
-	border-style: none solid solid;
+	/*border-style: none solid solid;*/
 	margin: -10px 0 0;
 	position: relative;
 }
@@ -251,10 +251,10 @@ img {
 #adbox div.details {
 	background: url(../images/bg-pattern.jpg) no-repeat left top;
 	height: 365px;
-	width: 380px;
+	width: 390px;
 	/*padding: 61px 45px;*/
 	position: absolute;
-	right: 0;
+	left: 550px;
 	top: 0;
 }
 #adbox div.details h1 {
@@ -910,8 +910,16 @@ div.blog a.more:hover {
 	height:120px;
 }
 
+#email{
+	font: 25px/24px "Oswald";
+	color: #940e1b;
+}
 /*Bootstrap Overrides*/
 .container{
 	padding-right: 0px;
 	padding-left: 0px;
+}
+
+.carousel-inner>.item>img{
+	height: 365px ;
 }
