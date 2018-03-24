@@ -8,7 +8,19 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+
+
 var app = express();
+var Contact = require ('./routes/Contact');
+
+// var express = require('express');
+// var app = require('../app.js');
+// var app = express();
+// app.post('/btnContact', Contact);
+// exports.Contact = function(req, res){
+//     res.render('Contact', {title:'Classic Masonry Contact', page: 'Contact'})
+// };
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

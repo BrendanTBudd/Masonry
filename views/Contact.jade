@@ -1,54 +1,172 @@
 html
     head
-        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-
-
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-        title Classic Masonry
+        meta(charset="UTF-8")
+        title Contact - Classic Masonry LTD
         link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        //script(src="../routes/Contact.js")
     body
-        div(id="header" style="width: 940px; margin: auto" )
-            div(style="padding:0px")
-                div(id="logo")
-                    a(href="index.html")
-                        img(src="images/CMLogo2.gif" alt="LOGO" height= 180 width=330 style="background-color:transparent" )
-                ul(id="navigation")
+        #header
+            div
+                #logo
+                    a(href="/")
+                        img(src="images/CMLogo2.gif" alt="LOGO" height= 180 width=330 style="background-color:transparent")
+                ul#navigation
                     li(class="selected")
                         a(href="/") Home
                     li
                         a(href="/About") About
                     li
                         a(href="/Gallery") Gallery
-                    //li
-                    //    a(href="blog.html") Blog
                     li
                         a(href="/Contact") Contact
-    block content
-        .main.container
-            .row
-                .col-md-6.col-md-offset-3
-                    h1.display-4.m-b-2 Contact:
+        #contents
+            div
+                #contact.body
+                    #sidebar
+                        .body
+                            img(src="images/Masonry1.jpg" alt="Img" height= 250 width=350)
+                            .contact
+                                p
+                                    | For Order and Inquiries Please Call:
+                                    b (914) 238-8511
+                                    |  Or you can visit us at:
+                                    b
+                                    |  Or just Email us instead at:
+                                    b.email classicmasonryltd@yahoo.com
+                    #main
+                        h1 Contact
+                        div.contactForm
 
-                    // register form
-                    form(method='POST' action='/register')
-                        div.form-group
-                            label(for='name') Name:
-                            input#name.form-control(type='text', placeholder='first and last' name='name' required=true)
-                        div.form-group
-                            label(for='email') Email:
-                            input#email.form-control(type='email', placeholder='name@email.com' name='email' required=true)
-                        div.form-group
-                            label(for='PhoneNum') Phone Number:
-                            input#PhoneNum.form-control(type='text', placeholder='Phone Number' name='PhoneNum' required=true)
+                            form(method="post" action='/Contact')
+                                label Name
+                                input(type="text" value="" id='Name' name='Name' required=true)
+                                label Email Address
+                                input(type="text" value="" id='Email' name='Email' required=true)
+                                label Contact Number
+                                input(type="text" value="" id='phoneNum' name='phoneNum' required=true)
+                                label Message
+                                textarea(name='message', cols='40', rows='10', id='message')
+                                input.btn1(type="submit" value="Send Message" id="btnContact")
+                                p= message
+                                //if(typeof msg !== 'undefined')
+                                //    if(!!err)
+                                //        div(class='msgbox err') #{msg}
+                                //    else
+                                //        div(class='msgbox success') #{msg}
+        #footer
+            div
+                #links
+                    .showroom
+                        h4 Visit our Gallery
+                        a(href="/Gallery")
+                            img(src="images/CMLogo.gif" height='125px' width='150px' alt="Img")
+                        p
+                            | 4885 Wilson Street
+                            br
+                            |  Victorville, CA 92392
+                            br
+                            br
+                            |  (914) 238-8511
+                            br
+                            br
+                            a(href="/") Classic Masonry
+                    div
+                        h4 Recent Blog Posts
+                        ul.posts
+                            li
+                                span.time Apr 16
+                                p
+                                    a(href="blog.html") The Carving Master & Owner
+                                    |  Maybe you’re looking for something diferent, something special.
+                            li
+                                span.time Apr 15
+                                p
+                                    a(href="blog.html") 5 Star Hotels We Supply
+                                    |  And we love the challenge of doing something diferent and something special.
+                            li
+                                span.time Apr 14
+                                p
+                                    a(href="blog.html") How To Pick The Right Furniture For You
+                                    |  What’s more, they’re absolutely free! You can do a lot with them.
+                    div
+                        form#newsletter(action="#" method="post")
+                            h4 Join Our Newsletter
+                            input(type="text" value="Enter Email Address Here For Updates" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}")
+                            input.btn2(type="submit" value="Sign up")
+                        #connect
+                            h4 Social Media
+                            a.facebook(href="http://freewebsitetemplates.com/go/facebook/" target="_blank")
+                            a.googleplus(href="http://freewebsitetemplates.com/go/googleplus/" target="_blank")
+                            a.twitter(href="http://freewebsitetemplates.com/go/twitter/" target="_blank")
+                ul.navigation
+                    li
+                        a(href="index.html") Home
+                    li
+                        a(href="about.html") About
+                    li
+                        a(href="gallery.html") Gallery
+                    li
+                        a(href="blog.html") Blog
+                    li
+                        a(href="contact.html") Contact
+                p#footnote
+                    | © Copyright 2023. All Rights Reserved.
+
+//html
+//    head
+//        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+//
+//        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+//
+//
+//        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+//        title Classic Masonry
+//        link(rel='stylesheet', href='/stylesheets/style.css')
+//    body
+//        div(id="header" style="width: 940px; margin: auto" )
+//            div(style="padding:0px")
+//                div(id="logo")
+//                    a(href="index.html")
+//                        img(src="images/CMLogo2.gif" alt="LOGO" height= 180 width=330 style="background-color:transparent" )
+//                ul(id="navigation")
+//                    li(class="selected")
+//                        a(href="/") Home
+//                    li
+//                        a(href="/About") About
+//                    li
+//                        a(href="/Gallery") Gallery
+//                    //li
+//                    //    a(href="blog.html") Blog
+//                    li
+//                        a(href="/Contact") Contact
+//    block content
+//        .main.container
+//            .row
+//                .col-md-6.col-md-offset-3
+//                    <br>
+//                    h1(style="color:#940e1b; font-size:100px; font: OsWald; text-underline: #940e1b;") Contact:
+//
+//                    // register form
+//                    form(method='POST' action='/register')
+//                        div.form-group
+//                            label(for='name' style="color:#940e1b; font-size:50px") Name:
+//                            input#name.form-control(type='text', placeholder='first and last' name='name' required=true)
+//                        div.form-group
+//                            label(for='email' style="color:#940e1b; font-size:50px") Email:
+//                            input#email.form-control(type='email', placeholder='name@email.com' name='email' required=true)
+//                        div.form-group
+//                            label(for='PhoneNum' style="color:#940e1b; font-size:50px") Phone Number:
+//                            input#PhoneNum.form-control(type='text', placeholder='Phone Number' name='PhoneNum' required=true)
+//                        button.btn.btn-primary(type='submit' style="color:Black; background-color: #940e1b; font-size:25px") Contact
                         //div.form-group
                         //    label(for='pw') Password:
                         //    input#pw.form-control(type='password' name='password')
                         //div.form-group
                         //    label(for='pw2') Confirm Password:
                             input#pw2.form-control(type='password' name='confirmPassword')
-                        button.btn.btn-primary(type='submit') Sign up
+                        //button.btn.btn-primary(type='submit') Sign up
 //
 //                //<div class="checkout-form">
 //                //    <form id='frmCheckout'>

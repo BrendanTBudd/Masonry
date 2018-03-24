@@ -27,7 +27,7 @@ img {
 	background-repeat: no-repeat;
 }
 .btn1, .btn2 {
-	background: url(../images/buttons.png) no-repeat;
+	background: no-repeat;
 	cursor: pointer;
 	font: 14px/24px "Oswald";
 	text-decoration: none;
@@ -204,7 +204,8 @@ img {
 	padding: 10px 10px 0;
 }
 #contents div.body h1 {
-	color: #241b18;
+	color: #940e1b;
+	text-decoration: underline #940e1b;
 	font-family: "Oswald";
 	font-size: 34px;
 	font-weight: normal;
@@ -696,49 +697,52 @@ div.blog a.more:hover {
 }
 /** Contact **/
 #contact form {
-	background: url(../images/separator-light.png) repeat-x left top;
+	/*background: url(../images/separator-light.png) repeat-x left top;*/
 	padding: 30px 0 0;
 }
+
 #contact form label {
-	color: #626161;
+	color: #940e1b;
 	display: block;
-	font-size: 14px;
+	font-size: 24px;
 	line-height: 24px;
 }
 #contact form input {
-	color: #626161;
-	font-size: 13px;
-	height: 27px;
+	color: #940e1b;
+	font-size: 19px;
+	height: 35px;
 	line-height: 27px;
 	width: 440px;
-	border: 3px solid #af8112;
+	border: 3px solid #940e1b;
 	margin: 0 0 12px;
 }
 #contact form input.btn1 {
-	color: #966a01;
+	color: white;
+	background-color: #940e1b;
 	cursor: pointer;
+	font-size: 14px;
 	font-family: "Oswald";
 	height: 34px;
 	line-height: 34px;
-	width: 109px;
+	width: 119px;
 	border: 0;
 	padding: 0 0 2px;
 	text-transform: uppercase;
 }
 #contact textarea {
-	color: #626161;
+	color: #940e1b;
 	font-size: 14px;
 	height: 158px;
 	line-height: 24px;
 	width: 440px;
-	border: 3px solid #af8112;
+	border: 3px solid #940e1b;
 	margin: 0 0 12px;
 	overflow: auto;
 	resize: none;
 }
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
-	background-color: #e2b241;
+	background-color: transparent;
 	border-top: 1px solid #fff;
 	padding: 28px 0 14px;
 }
@@ -913,6 +917,19 @@ div.blog a.more:hover {
 #email{
 	font: 25px/24px "Oswald";
 	color: #940e1b;
+}
+
+#PhoneNum{
+	font: 25px/24px "OsWald";
+	color: #940e1b;
+}
+
+#name{
+	font: 25px/24px "OsWald";
+	color: black;
+	/*background-color: #940e1b;*/
+
+
 }
 /*Bootstrap Overrides*/
 .container{
