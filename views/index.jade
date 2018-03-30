@@ -2,6 +2,7 @@ doctype html
 html
     head
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        //link(rel="stylesheet" href="/stylesheets/bootstrap.css")
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
@@ -22,8 +23,6 @@ html
                         a(href="/About") About
                     li
                         a(href="/Gallery") Gallery
-                    //li
-                    //    a(href="blog.html") Blog
                     li
                         a(href="/Contact") Contact
         div(id="contents" )
@@ -71,31 +70,81 @@ html
                         div(class="details")
                             br
                             br
+                            br
+                            br
                             h1 High Quality
                             br
                             h1 Masonry Work
                             br
                             h1 Thats built to last
-                            p Below will be all the sections for different photos to be entered
-                    ul(id="featured")
+                    ul(id="featured1")
                         li
                             div
                                 img(src="/images/Masonry1.jpg" alt="Img" height= 173 width=310)
-                                a(href="index.html")
-                            div(class="details")
-                                h4 Pools
-                                p This is a test section for pool photos
-                        li(class="bedroom")
+                                a(href="/Gallery")
+                            div(class="details1")
+
+                        li(class="bedroom1")
                             div
                                 img(src="images/Masonry.jpg" height= 173 width=310)
-                                a(href="index.html")
-                            div(class="details")
-                                h4 Grills
-                                p This is a test section for the would be Grills category
-                        li(class="kitchen")
+                                a(href="/Gallery")
+                            div(class="details1")
+                                a(href="/Gallery")
+                                    button(type="button" id="ViewMore" name="ViewMore")
+                                        span View More
+
+
+                        li(class="kitchen1")
                             div
                                 img(src="images/MasonryFire.jpg" alt="Img" height= 173 width=310)
-                                a(href="index.html")
-                            div(class="details")
-                                h4 Misc
-                                p This is a test section for the would be misc masonry work
+                                a(href="/Gallery")
+                            div(class="details1")
+
+
+        html
+            body
+                #footer
+                    div
+                        #links
+                            .showroom
+                                //h4 Visit our Gallery
+                                //a(href='/Gallery')
+                                //    img(src='images/CMLogo.gif', height='125px' width='150px' alt='Img')
+
+                            div
+                            //    h4 Recent Blog Posts
+                            //    ul.posts
+                            //        li
+                            //            span.time Apr 16
+                            //            p
+                            //                a(href='blog.html') The Carving Master & Owner
+                            //                |  Maybe you’re looking for something diferent, something special.
+                            //        li
+                            //            span.time Apr 15
+                            //            p
+                            //                a(href='blog.html') 5 Star Hotels We Supply
+                            //                |  And we love the challenge of doing something diferent and something special.
+                            //        li
+                            //            span.time Apr 14
+                            //            p
+                            //                a(href='blog.html') How To Pick The Right Furniture For You
+                            //                |  What’s more, they’re absolutely free! You can do a lot with them.
+                            div
+                                //form#newsletter(action='#', method='post')
+                                //    h4 Join Our Newsletter
+                                //    input(type='text', value='Enter Email Address Here For Updates', onblur="javascript:if(this.value==''){this.value=this.defaultValue;}", onfocus="javascript:if(this.value==this.defaultValue){this.value='';}")
+                                //    input.btn2(type='submit', value='Sign up')
+                                #connect
+                                    h4 Social Media
+                                    a.facebook(href='https://www.facebook.com/Classic-Masonry-105677656128248/', target='_blank')
+                        ul.navigation
+                            li
+                                a(href='/') Home
+                            li
+                                a(href='/About') About
+                            li
+                                a(href='/Gallery') Gallery
+                            li
+                                a(href='/Contact') Contact
+                        p#footnote
+                            | (914) 238-8511

@@ -22,9 +22,50 @@ img {
 	border: 0;
 }
 /*------------------------------ Sprites ------------------------------*/
-#contents, #contents > div, #contents div.body {
-	background-image: url(../images/bg-contents.png);
+.white{
+	background-image: url(../images/whiteBackground.jpg);
 	background-repeat: no-repeat;
+
+}
+
+#ViewMore{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #940e1b;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+#ViewMore span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#ViewMore span:after{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#ViewMore:hover span{
+	padding-right: 25px;
+}
+
+#ViewMore:hover span:after {
+	opacity: 1;
+	right: 0;
 }
 .btn1, .btn2 {
 	background: no-repeat;
@@ -252,7 +293,7 @@ img {
 #adbox div.details {
 	background: url(../images/bg-pattern.jpg) no-repeat left top;
 	height: 365px;
-	width: 390px;
+	width: 388px;
 	/*padding: 61px 45px;*/
 	position: absolute;
 	left: 550px;
@@ -315,7 +356,7 @@ img {
 }
 #featured div.details {
 	background: url(../images/separator-light.png) repeat-x left top;
-	padding: 16px 20px 0;
+	padding: 23px 45px 0;
 }
 #featured div.details h4 {
 	color: #ffc947;
@@ -336,6 +377,72 @@ img {
 #featured div.details p a:hover {
 	color: #ffc947;
 }
+
+/*new featured*/
+
+
+#featured1 li > div:first-child {
+	height: 179px;
+	width: 314px;
+	overflow: hidden;
+	position: relative;
+}
+#featured1 li > div:first-child > a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+#featured1 li > div:first-child > a:hover {
+	background-color: #fff;
+	filter:alpha(opacity=10); /** Needed for IE8 and below **/
+	opacity:0.1;
+}
+#featured1 div.details1 {
+	/*background: url(../images/separator-light.png) repeat-x left top;*/
+	padding: 23px 45px 0;
+}
+#featured1 div.details1 h4 {
+	color: #ffc947;
+	font-family: "Oswald";
+	font-weight: normal;
+	margin: 0 0 6px;
+	text-transform: uppercase;
+}
+#featured1 div.details1 p {
+	color: #fff;
+	font-size: 13px;
+	line-height: 18px;
+}
+#featured1 div.details1 p a {
+	color: #fff;
+	text-decoration: none;
+}
+#featured1 div.details1 p a:hover {
+	color: #ffc947;
+}
+
+#featured1 {
+	display: inline-block;
+	list-style: none;
+	width: 940px;
+	margin: 0;
+	padding: 0;
+}
+#featured1 li {
+	float: left;
+	background-color: transparent;
+	width: 314px;
+	overflow: hidden;
+}
+
+#featured1 li.kitchen1{
+	width: 312px;
+}
+
+
 div.contact {
 	float: left;
 	background: url(../images/separator-light-vertical.png) repeat-y right top;
@@ -444,9 +551,11 @@ div.blog a.more:hover {
 	text-align: center;
 }
 #contents #about, #contents #contact {
-	min-height: 900px;
+	background-image: url(../images/whiteBackground.jpg);
+	min-height: 700px;
 	width: 900px;
 	padding: 20px 30px 0;
+
 }
 /** About **/
 #about p span {
@@ -743,7 +852,7 @@ div.blog a.more:hover {
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
 	background-color: transparent;
-	border-top: 1px solid #fff;
+	/*border-top: 1px solid #fff;*/
 	padding: 28px 0 14px;
 }
 #footer p {
@@ -791,13 +900,13 @@ div.blog a.more:hover {
 }
 #links > div {
 	float: left;
-	background: url(../images/separator-dark-vertical.png) repeat-y left top;
-	height: 300px;
+	/*background: url(../images/separator-dark-vertical.png) repeat-y left top;*/
+	/*height: 300px;*/
 	padding-left: 20px;
 }
 #links .showroom {
 	background: none;
-	width: 293px;
+	/*width: 293px;*/
 	padding-left: 0;
 	padding-right: 15px;
 }
@@ -891,8 +1000,8 @@ div.blog a.more:hover {
 	margin-left: 0;
 }
 #footer ul.navigation li a {
-	color: #ab7d0f;
-	font: 11px/24px "Oswald";
+	color: #940e1b;
+	font: 16px/24px "Oswald";
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -900,8 +1009,8 @@ div.blog a.more:hover {
 	color: #241b18;
 }
 #footer #footnote {
-	color: #ab7d0f;
-	font: 11px/24px "Oswald";
+	color: #940e1b;
+	font: 15px/25px "Oswald";
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -912,6 +1021,7 @@ div.blog a.more:hover {
 
 #featured div {
 	height:120px;
+	background-color: transparent;
 }
 
 #email{
@@ -939,4 +1049,8 @@ div.blog a.more:hover {
 
 .carousel-inner>.item>img{
 	height: 365px ;
+}
+
+.body {
+	line-height: 1;
 }

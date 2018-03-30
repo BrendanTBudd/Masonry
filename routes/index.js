@@ -10,6 +10,30 @@ router.get('/Gallery', function(req, res, next) {
     res.render('Gallery', { title: 'Classic Masonry Gallery' });
 });
 
+router.get('/Gallery/Pools', function(req, res, next) {
+    res.render('Pools', { title: 'Classic Masonry Gallery' });
+});
+
+router.get('/Gallery/OutdoorKitchens', function(req, res, next) {
+    res.render('OutdoorKitchens', { title: 'Classic Masonry Gallery' });
+});
+
+router.get('/Gallery/Firepits', function(req, res, next) {
+    res.render('Firepits', { title: 'Classic Masonry Gallery' });
+});
+
+router.get('/Gallery/Walkways', function(req, res, next) {
+    res.render('Walkways', { title: 'Classic Masonry Gallery' });
+});
+
+router.get('/Gallery/Houses', function(req, res, next) {
+    res.render('Houses', { title: 'Classic Masonry Gallery' });
+});
+
+router.get('/Gallery/Misc', function(req, res, next) {
+    res.render('Misc', { title: 'Classic Masonry Gallery' });
+});
+
 router.get('/About', function(req, res, next) {
     res.render('About', { title: 'Classic Masonry About' });
 });
